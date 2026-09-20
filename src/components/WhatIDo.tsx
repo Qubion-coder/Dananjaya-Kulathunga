@@ -1,26 +1,26 @@
-import { Laptop, Lightbulb, Globe, TrendingUp } from 'lucide-react';
+import { Briefcase, Lightbulb, Users, TrendingUp } from 'lucide-react';
 
 export function WhatIDo() {
   const cards = [
     {
-      icon: <Laptop className="w-8 h-8 text-[var(--color-accent)]" />,
-      title: "Technology",
-      description: "Exploring modern technology, digital tools, and practical solutions."
+      icon: <Briefcase className="w-8 h-8 text-[var(--color-accent)]" />,
+      title: "Business & Enterprise",
+      description: "Running and growing my own business ventures with a focus on practical value."
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-[var(--color-accent)]" />,
-      title: "Digital Solutions",
-      description: "Interested in useful digital solutions that make everyday work and communication easier."
+      title: "Creative Thinking",
+      description: "Always looking for new ideas, better ways to do things, and creative approaches to everyday challenges."
     },
     {
-      icon: <Globe className="w-8 h-8 text-[var(--color-accent)]" />,
-      title: "Digital Presence",
-      description: "Building and maintaining a professional presence across modern digital platforms."
+      icon: <Users className="w-8 h-8 text-[var(--color-accent)]" />,
+      title: "Connecting with People",
+      description: "Building meaningful relationships and fostering a strong community around my work."
     },
     {
       icon: <TrendingUp className="w-8 h-8 text-[var(--color-accent)]" />,
-      title: "Entrepreneurial Mindset",
-      description: "Focused on learning, improving, and creating opportunities through technology and digital platforms."
+      title: "Personal Growth",
+      description: "Constantly learning, improving, and seeking new experiences to grow both personally and professionally."
     }
   ];
 

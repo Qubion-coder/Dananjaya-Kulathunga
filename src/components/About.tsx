@@ -13,7 +13,7 @@ export function About() {
           {/* Left Column */}
           <div className="lg:col-span-5">
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[var(--color-text-primary)] md:sticky md:top-32">
-              Technology, people, and ideas.
+              Life, people, and meaningful connections.
             </h3>
           </div>
 
@@ -21,10 +21,10 @@ export function About() {
           <div className="lg:col-span-7 flex flex-col gap-10">
             <div className="prose prose-invert max-w-none">
               <p className="text-xl leading-relaxed text-[var(--color-text-secondary)] mb-6">
-                I'm Dananjaya Kulathunga, a technology-focused individual with an interest in digital platforms, modern technology, and building practical solutions. This website is a simple space to introduce myself, share my professional presence, and make it easy for people to connect with me.
+                I'm Dananjaya Kulathunga, someone who values hard work, creativity, and building practical solutions in everyday life. This website is a simple space to introduce myself, share a bit about what I do, and make it easy for people to connect with me.
               </p>
               <p className="text-xl leading-relaxed text-[var(--color-text-secondary)]">
-                I also have a professional presence through SmartixZone, where I share and work around technology and digital content.
+                I also manage SmartixZone, my business platform where I share updates, creative content, and connect with my community.
               </p>
             </div>
 

@@ -15,12 +15,12 @@ export function Hero() {
               <span className="block">Kulathunga</span>
             </h1>
             <p className="text-xl text-[var(--color-text-secondary)] font-medium">
-              Technology Enthusiast • Entrepreneur • Digital Professional
+              Entrepreneur • Professional • Explorer
             </p>
           </div>
 
           <p className="text-sub max-w-lg">
-            Welcome to my personal space on the web. I'm Dananjaya Kulathunga, passionate about technology, digital solutions, and building meaningful connections through modern platforms.
+            Welcome to my personal space on the web. I'm Dananjaya Kulathunga, passionate about connecting with people, exploring new ideas, and building meaningful relationships in both my personal and professional life.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">

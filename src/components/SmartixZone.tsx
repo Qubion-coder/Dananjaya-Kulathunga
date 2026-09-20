@@ -6,11 +6,11 @@ export function SmartixZone() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center max-w-2xl mx-auto">
           <span className="text-[var(--color-accent)] font-semibold tracking-wider text-sm uppercase mb-4 block">
-            MY PROFESSIONAL / DIGITAL PRESENCE
+            MY BUSINESS & SOCIAL PRESENCE
           </span>
           <h2 className="heading-medium mb-4">SmartixZone</h2>
           <p className="text-xl text-[var(--color-text-secondary)]">
-            SmartixZone is my business and digital presence, where I share technology-focused content and connect with people through social platforms.
+            SmartixZone is my primary business venture, where I share updates, creative content, and connect with my community through social platforms.
           </p>
         </div>
 
