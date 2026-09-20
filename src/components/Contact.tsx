@@ -45,7 +45,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-24 px-6 md:px-12">
+    <section id="contact" className="py-20 md:py-24 px-5 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center max-w-2xl mx-auto">
           <h2 className="heading-medium mb-4">Let's Connect</h2>
@@ -78,7 +78,7 @@ export function Contact() {
         </div>
 
         {/* Final CTA */}
-        <div className="glass-card p-12 text-center max-w-4xl mx-auto relative overflow-hidden group">
+        <div className="glass-card p-8 sm:p-12 text-center max-w-4xl mx-auto relative overflow-hidden group">
           <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-accent)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Let's stay connected.</h2>
           <p className="text-xl text-[var(--color-text-secondary)] mb-10 max-w-2xl mx-auto">

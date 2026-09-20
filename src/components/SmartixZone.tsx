@@ -2,7 +2,7 @@ import { ExternalLink, MessageCircle } from 'lucide-react';
 
 export function SmartixZone() {
   return (
-    <section id="smartixzone" className="py-24 px-6 md:px-12 bg-[#0d1014]">
+    <section id="smartixzone" className="py-20 md:py-24 px-5 md:px-12 bg-[#0d1014]">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center max-w-2xl mx-auto">
           <span className="text-[var(--color-accent)] font-semibold tracking-wider text-sm uppercase mb-4 block">
@@ -14,13 +14,13 @@ export function SmartixZone() {
           </p>
         </div>
 
-        <div className="glass-card p-8 md:p-12 relative overflow-hidden">
+        <div className="glass-card p-6 sm:p-8 md:p-12 relative overflow-hidden">
           {/* Subtle Background Glow */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-accent)]/10 rounded-full blur-[80px]"></div>
           
-          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-12">
             
-            <div className="flex-1 flex flex-col md:flex-row gap-8 w-full">
+            <div className="flex-1 flex flex-col md:flex-row gap-6 sm:gap-8 w-full">
               {/* Facebook Card */}
               <div className="flex-1 bg-[var(--color-primary)] border border-[var(--color-border)] rounded-2xl p-6 flex items-center justify-between group hover:border-[#1877F2]/50 transition-colors duration-300">
                 <div className="flex items-center gap-4">

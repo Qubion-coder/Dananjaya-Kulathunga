@@ -13,6 +13,15 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [mobileMenuOpen]);
+
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
@@ -29,8 +38,8 @@ export function Navbar() {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-        <a href="#home" className="flex items-center gap-3 group">
+      <div className="max-w-7xl mx-auto px-5 md:px-12 flex justify-between items-center relative z-50">
+        <a href="#home" className="flex items-center gap-3 group" onClick={() => setMobileMenuOpen(false)}>
           <div className="w-2.5 h-2.5 rounded-full bg-[var(--color-accent)] group-hover:scale-150 transition-transform duration-300"></div>
           <span className="text-xl font-bold tracking-tight text-[var(--color-text-primary)]">
             Dananjaya Kulathunga
@@ -52,7 +61,7 @@ export function Navbar() {
 
         {/* Mobile Nav Toggle */}
         <button
-          className="md:hidden text-[var(--color-text-primary)]"
+          className="md:hidden text-[var(--color-text-primary)] p-2 -mr-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -60,21 +69,37 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[var(--color-secondary)] border-b border-[var(--color-border)] py-4 px-6 flex flex-col gap-4 shadow-xl">
-          {navLinks.map((link) => (
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`md:hidden fixed inset-0 bg-[var(--color-primary)]/95 backdrop-blur-xl transition-all duration-500 ease-in-out flex flex-col justify-center items-center ${
+          mobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+      >
+        <div className="flex flex-col items-center gap-8 w-full px-6">
+          {navLinks.map((link, index) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="text-lg font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] py-2 border-b border-[var(--color-border)]/50 last:border-none"
+              className={`text-3xl font-bold text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-all duration-300 transform ${
+                mobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+              }`}
+              style={{ transitionDelay: `${index * 75}ms` }}
             >
               {link.name}
             </a>
           ))}
+          
+          <div className={`mt-8 pt-8 border-t border-[var(--color-border)] w-full max-w-xs flex flex-col items-center gap-4 transition-all duration-500 delay-500 transform ${
+            mobileMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+          }`}>
+            <p className="text-sm text-[var(--color-text-secondary)] uppercase tracking-wider">Get in touch</p>
+            <a href="mailto:dananjayakulathunga413@gmail.com" className="text-[var(--color-accent)] font-medium">
+              dananjayakulathunga413@gmail.com
+            </a>
+          </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }

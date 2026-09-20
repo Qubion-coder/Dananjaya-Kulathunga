@@ -2,17 +2,17 @@ import { Mail, Phone, MessageCircle } from 'lucide-react';
 
 export function About() {
   return (
-    <section id="about" className="py-24 px-6 md:px-12 bg-[#0d1014]">
+    <section id="about" className="py-20 md:py-24 px-5 md:px-12 bg-[#0d1014]">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="heading-medium mb-4">A Little About Me</h2>
           <p className="text-xl text-[var(--color-text-secondary)]">Personal, professional, and always moving forward.</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 items-start">
           {/* Left Column */}
           <div className="lg:col-span-5">
-            <h3 className="text-4xl md:text-5xl font-bold leading-tight text-[var(--color-text-primary)] sticky top-32">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[var(--color-text-primary)] md:sticky md:top-32">
               Technology, people, and ideas.
             </h3>
           </div>
@@ -29,8 +29,8 @@ export function About() {
             </div>
 
             {/* Personal Information Card */}
-            <div className="glass-card p-8 mt-4 hover:-translate-y-1 transition-transform duration-300">
-              <h4 className="text-lg font-medium text-white mb-6 border-b border-[var(--color-border)] pb-4">Personal Details</h4>
+            <div className="glass-card p-6 sm:p-8 mt-2 sm:mt-4 hover:-translate-y-1 transition-transform duration-300">
+              <h4 className="text-lg font-medium text-white mb-5 sm:mb-6 border-b border-[var(--color-border)] pb-3 sm:pb-4">Personal Details</h4>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>

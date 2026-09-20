@@ -2,8 +2,8 @@ import { ArrowRight, Mail, Phone } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-24 pb-12 px-6 md:px-12">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="home" className="min-h-screen flex items-center pt-28 pb-12 px-5 md:px-12">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* Left Column */}
         <div className="flex flex-col gap-8 animate-fade-in-up">
           <div>
@@ -58,8 +58,8 @@ export function Hero() {
         </div>
 
         {/* Right Column - Premium Profile Visual */}
-        <div className="flex justify-center relative perspective-1000 order-first lg:order-last mb-8 lg:mb-0">
-          <div className="relative w-full max-w-sm lg:w-96 h-[400px] lg:h-[500px] glass-card overflow-hidden group">
+        <div className="flex justify-center relative perspective-1000 order-first lg:order-last mb-4 lg:mb-0">
+          <div className="relative w-full max-w-sm lg:w-96 h-[340px] sm:h-[400px] lg:h-[500px] glass-card overflow-hidden group">
             {/* Abstract Background Effects */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[var(--color-secondary)] to-[#0a0c0f] z-0"></div>
             <div className="absolute -top-32 -right-32 w-64 h-64 bg-[var(--color-accent)]/20 rounded-full blur-[80px] group-hover:bg-[var(--color-accent)]/30 transition-colors duration-700"></div>
@@ -69,7 +69,7 @@ export function Hero() {
             <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
 
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center">
-              <div className="w-56 h-56 mb-8 rounded-2xl border border-[var(--color-border)] shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 bg-[var(--color-secondary)]">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 mb-6 sm:mb-8 rounded-2xl border border-[var(--color-border)] shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 bg-[var(--color-secondary)]">
                 <img 
                   src="/WhatsApp Image 2026-09-20 at 18.20.10.jpeg" 
                   alt="Dananjaya Kulathunga" 
@@ -85,8 +85,8 @@ export function Hero() {
               </div>
 
               {/* Floating Card */}
-              <div className="glass-card px-6 py-4 border border-[var(--color-border)]/50 bg-[#0B0D10]/80 mt-8 transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
-                <p className="text-white font-medium mb-1 text-center">Dananjaya Kulathunga</p>
+              <div className="glass-card px-4 sm:px-6 py-3 sm:py-4 border border-[var(--color-border)]/50 bg-[#0B0D10]/80 mt-6 sm:mt-8 transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
+                <p className="text-white font-medium mb-1 text-center text-sm sm:text-base">Dananjaya Kulathunga</p>
                 <div className="flex justify-between items-center gap-8 text-xs text-[var(--color-text-secondary)]">
                   <span>Personal Profile</span>
                   <span className="flex items-center gap-1">
